@@ -1,0 +1,65 @@
+WHAT ID GIT?
+-intitialy git is storing our initial project , stores our initial files 
+-after it what ever changes we make it will stores all
+
+WHAT IS REPOSITORY?
+-nothing just our project file 
+
+GIT COMMANDS
+clone - bring your git repo to your local machine 
+add-
+commit-save your file on git
+push-once the file commit need to push on remote repo
+pull - 
+READ.md <- md mean mark down 
+
+TRACKING FILE IN GIT HUB COMMANDS
+            git add index.html     [track define files] [this untrack file color is red]
+            git add .              [track all file]
+
+HOW TO CHANGE DIRECTORY
+use command in terminal 
+cd ../folder name here
+
+HOW TO CREATE REPOSITORY LOCALLY IN VS CODE FOLLOW THIS STEPS:
+
+first make folder
+in terminal use git init - it will initialize the emty repository
+now create any a file
+track that file
+commit that file
+at the time of push we need to configure where to push that file on remote
+this is the location where we need to push
+                    git remote add origin https://github.com/jaydevsonip/soni_temp_1.git
+now we have location 
+now we are ready to push the file
+		git push -u origin master
+this command helps to push on repository that we created in vs code loccal
+HOW TO CHECK HOW MANY BRANCH IS THERE IN OUR PROJECT
+		git branch
+
+HOW TO CREATE A BRANCH WITH USING VS CODE TERMINAL
+		git checkout -b feature     [feature is branch name]
+		checkout is also use for switching branch
+
+HOW TO DELETE BRANCH 
+		git branch -d  brachname.here
+
+SENARIO-
+WE CREATED A BRANCH FROM MASTER BRANCH
+OUR BRANCH NAME IS branchOne
+now we can do modification in this branch 
+at the time of merge on git hub we are not direct merge on it github
+first we go in that created branch and make untrack file to track file
+-now we are commit our file on that brach
+-after we will push on that branch 
+it wil shows some pushimg  upstrim origin error write it on the terminal
+example     git push --set-upstream origin branchOne
+since upstrim mentiond before just write on terminal
+
+			git push -u origin branchOne
+
+now the req goes to web git hub for mearge  , accept it and do comments if req and merge
+
+SHORTHAND COMMAND FOR COMMIT AND ADD
+ 			git commit -am "messagehere"
